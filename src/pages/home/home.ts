@@ -54,13 +54,13 @@ export class HomePage {
       buttons: [
       {
         text:'OK',
-        handler:data => console.log(data)
+        handler:data => console.log('OK ',data[0])
       },{
         text:'Cancel',
-        handler:() => console.log('Cancel Clicked')
+        handler:data => console.log('Cancel ',data[0])
       },{
         text:'Reset',
-        handler:() => console.log('Reset Clicked')
+        handler:data => console.log('Reset ',data[0])
       }]
     });
     alert.present();
